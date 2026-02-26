@@ -33,7 +33,7 @@ deps_list: |
 ## Использование
 
 ```yaml
-- uses: my-org/setup-deps-includes@v1
+- uses: AmxxModularEcosystem/install-amxmodx-deps@v1
   with:
     deps_list: |
       AmxxModularEcosystem/ParamsController@1.3.3

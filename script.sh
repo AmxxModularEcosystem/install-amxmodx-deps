@@ -35,7 +35,7 @@ DEPS_COMPILER_ARGS=""
 
 while IFS= read -r dep; do
   [ -z "$dep" ] && continue
-  path_arg=$(handleDep "$dep")
+  path_arg=$(handleDep "$dep") || exit 1
   DEPS_COMPILER_ARGS="${DEPS_COMPILER_ARGS} ${path_arg}"
 done <<< "$DEPS_LIST"
 
